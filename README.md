@@ -1,2 +1,2 @@
-# git
-Git Config
+# Git Config
+Basic git config with aliases
