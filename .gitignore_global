@@ -25,8 +25,12 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.svn
 
-# Other
+# IDE generated files #
+#######################
 .idea
 _ide_helper.php
+
+# Misc #
+########
+.svn
