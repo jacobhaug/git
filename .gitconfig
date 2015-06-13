@@ -21,8 +21,8 @@
     untracked = cyan
 
 [user]
-    name = Jacob Haug
-    email = jacob@jacob.codes
+    name = 
+    email = 
 
 [status]
     relativePaths = false
