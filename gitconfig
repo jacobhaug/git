@@ -21,30 +21,30 @@
   untracked = cyan
 
 [user]
-	name = Jacob Haug
-	email = jacob@kimmel.com
+  name = Jacob Haug
+  email = jacob@kimmel.com
 
 [status]
-	relativePaths = false
+  relativePaths = false
 
 [core]
-	excludesfile = /Users/jacob/.gitignore_global
-	pager = less -FRSX
+  excludesfile = /Users/jacob/.gitignore_global
+  pager = less -FRSX
 
 [push]
-	default = simple
+  default = simple
 
 [alias]
-	d  = diff
-	dc = diff --cached
-	lc = log ORIG_HEAD.. --stat --no-merges
-	gl = log --decorate --stat --graph --pretty=format:'%C(yellow)%h%Creset (%ar - %Cred%an%Creset), %s%n' 
-	st = status -sb
-	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
-	prune-all = !git remote | xargs -n 1 git remote prune
-	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
-	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
-	force = "!sh -c 'git clean -xdf && git reset --hard HEAD' -"
+  d  = diff
+  dc = diff --cached
+  lc = log ORIG_HEAD.. --stat --no-merges
+  gl = log --decorate --stat --graph --pretty=format:'%C(yellow)%h%Creset (%ar - %Cred%an%Creset), %s%n' 
+  st = status -sb
+  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+  prune-all = !git remote | xargs -n 1 git remote prune
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  force = "!sh -c 'git clean -xdf && git reset --hard HEAD' -"
 
   # Add and remove all changes, note how this alias is calling another alias
   addremove = !git r && git add . --all
